@@ -1,3 +1,6 @@
+"""Advent of code puzzle runner
+Author: Scoder12"""
+
 import math
 import pathlib
 import time
