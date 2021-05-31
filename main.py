@@ -7,10 +7,10 @@ import runner
 # Don't forget to put a 0 before days 1-9 (so day 5 becomes "05.py") but not on
 # any other days. This ensures the days are sorted properly in the files view.
 
-# Each day in the python file, all you have to do is write a part1(prompt) 
-#  method and paste your puzzle input in the text file. 
-# You can also return a value and it will be printed out. 
-# The input will be read and passed to your code automatically. 
+# Each day in the python file, all you have to do is write a part1(prompt)
+#  method and paste your puzzle input in the text file.
+# You can also return a value and it will be printed out.
+# The input will be read and passed to your code automatically.
 # Add a part2() method when you're ready.
 # Look at 01.py for an example
 
@@ -21,4 +21,4 @@ import runner
 # max_day is optional, remove it for no limit
 # day = runner.get_day(max_day=5)
 
-runner.run(day=3)
+runner.run(day=4)
