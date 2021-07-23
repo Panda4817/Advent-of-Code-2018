@@ -5,10 +5,23 @@ class Ground():
             data)
 
     def __str__(self) -> str:
+        ansi_grey = "\033[30m\033[40m"
+        ansi_yellow = "\033[33m\033[43m"
+        ansi_blue = "\033[34m\033[44m"
+        ansi_cyan = "\033[36m\033[46m"
+        ansi_clear = "\033[0m"
         string = ""
         for r in range(0, self.max_y+1):
             for c in range(self.min_x-1, self.max_x+1):
-                string += self.map[r][c]
+                if self.map[r][c] == '.':
+                    string += ansi_yellow
+                elif self.map[r][c] == '#':
+                    string += ansi_grey
+                elif self.map[r][c] == '~':
+                    string += ansi_blue
+                elif self.map[r][c] in ('|', '+'):
+                    string += ansi_cyan
+                string += self.map[r][c] + ansi_clear
             string += "\n"
         return string
 
