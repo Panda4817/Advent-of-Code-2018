@@ -1,16 +1,12 @@
 import z3
 
-
 # I tried other packages to help with part 2
+import numpy as np
 from queue import PriorityQueue
 from sys import maxsize
-import numpy as np
 from scipy import spatial
-
 from copy import deepcopy
 from itertools import combinations
-
-from z3.z3 import CheckSatResult
 
 
 class Object():
